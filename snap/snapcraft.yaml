@@ -1,0 +1,46 @@
+name: 4kvideodownloaderplus-tsugu
+base: core24
+version: '25.3.2-1'
+summary: Free video downloader trusted by millions
+description: |
+  Main functionality of our applications is free and will always stay free. No watermarks, no registration, no payments. Premium features are available for advanced use. 
+
+grade: stable
+confinement: strict
+
+lint:
+  ignore:
+    - classic
+    - library
+
+apps:
+  4kvideodownloaderplus-tsugu:
+    command: usr/lib/4kvideodownloaderplus/4kvideodownloaderplus-bin
+    extensions: [gnome]
+    environment: 
+      LD_LIBRARY_PATH: $SNAP/usr/lib/4kvideodownloaderplus:$SNAP/usr/lib/$CRAFT_ARCH_TRIPLET_BUILD_FOR/libproxy
+      HOME: "$SNAP_USER_DATA"
+      DISABLE_WAYLAND: 1  
+    plugs:
+      - home
+      - desktop
+      - desktop-legacy
+      - wayland
+      - x11
+      - opengl
+      - audio-playback
+      - network
+      - removable-media
+      - unity7
+      - gsettings
+
+parts:
+  4kvideodownloaderplus-tsugu:
+    source: https://dl.4kdownload.com/app/4kvideodownloaderplus_${SNAPCRAFT_PROJECT_VERSION}_amd64.deb
+    plugin: dump
+    source-type: deb
+    stage-packages:
+      - libc6
+      - libstdc++6
+      - libproxy1v5
+     
