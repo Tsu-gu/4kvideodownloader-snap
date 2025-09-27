@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=4k Video Downloader Plus
+Exec=4kvideodownloaderplus-tsugu
+Icon=${SNAP}/meta/gui/4kvideodownloaderplus-tsugu.png
+Comment=Free video downloader
+Terminal=false
+Type=Application
+MimeType=x-content/unix-software;
