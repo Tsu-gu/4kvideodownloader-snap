@@ -23,7 +23,7 @@ apps:
     environment: 
       LD_LIBRARY_PATH: $SNAP/usr/lib/4kvideodownloaderplus:$SNAP/usr/lib/$CRAFT_ARCH_TRIPLET_BUILD_FOR/libproxy
       HOME: "$SNAP_USER_DATA"
-    # DISABLE_WAYLAND: 1  
+      DISABLE_WAYLAND: 1  
     plugs:
       - home
       - desktop
@@ -46,8 +46,4 @@ parts:
       - libc6
       - libstdc++6
       - libproxy1v5
-      - qt6-wayland
-      - libqt6waylandclient6
-      - libqt6waylandcompositor6
-      - libqt6waylandeglclienthwintegration6
-      - libqt6waylandeglcompositorhwintegration6
+
