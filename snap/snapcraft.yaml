@@ -12,7 +12,10 @@ lint:
   ignore:
     - classic
     - library
-
+    
+platforms:
+  amd64:
+  
 apps:
   4kvideodownloaderplus-tsugu:
     command: usr/lib/4kvideodownloaderplus/4kvideodownloaderplus-bin
