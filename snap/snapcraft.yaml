@@ -36,6 +36,7 @@ apps:
       - removable-media
       - unity7
       - gsettings
+      - browser-support
 
 parts:
   4kvideodownloaderplus-tsugu:
