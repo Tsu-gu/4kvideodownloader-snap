@@ -21,7 +21,7 @@ apps:
     command: usr/lib/4kvideodownloaderplus/4kvideodownloaderplus-bin
     extensions: [gnome]
     environment: 
-      LD_LIBRARY_PATH: $SNAP/usr/lib/4kvideodownloaderplus:$SNAP/usr/lib/$CRAFT_ARCH_TRIPLET_BUILD_FOR/libproxy
+      LD_LIBRARY_PATH: $SNAP/usr/lib/4kvideodownloaderplus:$SNAP/usr/lib/$CRAFT_ARCH_TRIPLET_BUILD_FOR/libproxy:$SNAP/usr/lib/$CRAFT_ARCH_TRIPLET_BUILD_FOR
       HOME: "$SNAP_USER_DATA"
       DISABLE_WAYLAND: 1  
     plugs:
@@ -46,5 +46,6 @@ parts:
       - libc6
       - libstdc++6
       - libproxy1v5
+      - libxkbfile1
       - libxcb-cursor0
-
+      - libxkbcommon0
