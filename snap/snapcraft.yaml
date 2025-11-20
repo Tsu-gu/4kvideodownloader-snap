@@ -46,4 +46,5 @@ parts:
       - libc6
       - libstdc++6
       - libproxy1v5
+      - libxcb-cursor0
 
