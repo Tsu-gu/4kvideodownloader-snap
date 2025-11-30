@@ -26,17 +26,12 @@ apps:
       DISABLE_WAYLAND: 1  
     plugs:
       - home
-      - desktop
-      - desktop-legacy
-      - wayland
-      - x11
-      - opengl
       - audio-playback
       - network
       - removable-media
       - unity7
-      - gsettings
       - browser-support
+      # I removed some plugs because as it turns out they area autoconnected by the gnome extension.
 
 parts:
   4kvideodownloaderplus-tsugu:
