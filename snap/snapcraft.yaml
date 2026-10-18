@@ -31,7 +31,7 @@ apps:
       - removable-media
       - unity7
       - browser-support
-      # I removed some plugs because as it turns out they area autoconnected by the gnome extension.
+      # I removed some plugs because as it turns out they are autoconnected by the gnome extension.
 
 parts:
   4kvideodownloaderplus-tsugu:
